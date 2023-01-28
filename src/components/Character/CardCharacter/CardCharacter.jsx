@@ -1,19 +1,8 @@
 import {useState, useEffect } from 'react'
 import './CardCharacter.css'
 import './CardCharacter'
-// import data from '../../../db.json'; 
-// funciono
-
-function CardCharacter(){
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch('../../../db.json')
-      .then(response => response.json())
-      .then(data=> setData(data.characters))
-      .catch(error => console.log(error));
-  }, []);
-
-    return (
+const CardCharacter = ({data})=>{
+  return (
       <>
       {data && data.map(item => (
       <div key={item.id} className='container-card-character'>
@@ -23,7 +12,6 @@ function CardCharacter(){
         
         <li>Race: {item.race}</li>
         <li>Abilities: {item.abilities}</li>
-        
       </div>
        ))}
        </>
