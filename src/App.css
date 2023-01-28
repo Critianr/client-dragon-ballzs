@@ -24,6 +24,7 @@ header > div{
     justify-content: space-around;
     /* float: right; */
     color: white;
+    /* color: black; */
 }
 header > div > a>img{
     /* font-size: small; */
@@ -37,6 +38,7 @@ header > p{
     display: flex;
     justify-content: center;
     color: white;
+    /* color: black; */
     font-size: 40px;
     /* align-items: center; */
 }

@@ -10,7 +10,12 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 
 const perGet=()=>{
-    fetch('./db.json')
+    fetch('https://back-dragon-ballzs-production.up.railway.app/',
+    { method: 'GET',
+    // headers: ({'Content-type':'application/json'}),
+    mode: 'no-cors', // <---
+    cache: 'default'
+ })
     .then(response => response.json())
     .then(character=>setCharacter(character.characters))
     .catch(error=>console.log(error));
@@ -44,7 +49,17 @@ useEffect(()=>{
     },[]);
   return (
     <div className="App">
-        
+        {/* <header>
+            <div>
+            <a><img src={simbolo} /></a>
+            <div>
+            <a>Docs</a>
+            <a>Supports us</a>
+            </div>
+            </div>
+            <p>API Dragon Ball Z Super</p>
+
+        </header> */}
       <div className="main">
       <header>
             <div>
