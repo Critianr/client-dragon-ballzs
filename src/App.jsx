@@ -1,7 +1,8 @@
 import {useState, useEffect } from 'react'
 import './App.css'
-import { CardCharacter } from './components/Character/CardCharacter/CardCharacter'
+import { CardCharacter } from './components/Character/CardCharacter'
 import img_title from './assets/dragonballLogo.png';
+import simbolo from './assets/prob.png';
 function App() {
 
 const [data, setData] = useState(null);
@@ -43,7 +44,19 @@ useEffect(()=>{
     },[]);
   return (
     <div className="App">
+        
       <div className="main">
+      <header>
+            <div>
+            <a><img src={simbolo} /></a>
+            <div>
+            <a>Docs</a>
+            <a>Supports us</a>
+            </div>
+            </div>
+            <p>API Dragon Ball Z Super</p>
+
+        </header>
         <img className='img_title' src={img_title} alt="" />
         <div className='container-search'>
         <input className='search-character' type="text" 
