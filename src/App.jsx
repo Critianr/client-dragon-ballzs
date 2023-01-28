@@ -10,22 +10,36 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 
 const perGet=()=>{
-    fetch('https://back-dragon-ballzs-production.up.railway.app/',
-    { method: 'GET',
-    // headers: ({'Content-type':'application/json'}),
-    mode: 'no-cors', // <---
-    cache: 'default'
- })
+    fetch('https://back-dragon-ballzs-production.up.railway.app/'
+    // ,
+    // { method: 'GET',
+    // // headers: ({'Content-type':'application/json'}),
+    // mode: 'no-cors', // <---
+    // cache: 'default'
+    // }
+    )
     .then(response => response.json())
     .then(character=>setCharacter(character.characters))
     .catch(error=>console.log(error));
 }
 
 const characterGet=()=>{
-    fetch('./db.json')
+    fetch('https://back-dragon-ballzs-production.up.railway.app/'
+    // , 
+    //  { method: 'GET',
+    //    headers: ({'Content-type':'application/json'}),
+    //   //  mode: 'no-cors', // <---
+    //   //  cache: 'default'
+    // }
+    )
     .then(response => response.json())
-    .then(data=>setData(data.characters.slice(0,5)))
-    .catch(error=>console.log(error));
+    .then(data=>setData(data.characters))
+    .catch(err=>{
+      console.log(err);
+    })
+    // .then(response => response.json())
+    // .then(data=>setData(data.characters))
+    // .catch(error=>console.log(error))
 }
 const handleChange=e=>{
     setSearch(e.target.value);
