@@ -1,0 +1,36 @@
+.documentation{
+    /* color: white; */
+    background-image: url('../../assets/4.jpg');
+    max-width: 320px;
+    
+    height: 100%;
+    background-color: rgb(50,50,50);
+    /* background-blend-mode:soft-light ; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-size: cover ; */
+    color: white;
+    flex-direction: column;
+    background-repeat: initial;
+    background-position: center;}
+.language-text{
+    background-color:rgb(193, 253, 193) ;
+    border-radius: 3px 3px 3px 3px;
+    /* color: #fff130; */
+    color: #009e3a;
+    /* font-weight: 500; */
+    padding: 0.25rem 0.5rem;
+    /* white-space: normal; */
+}
+.code-vista{
+    max-width: 320px;
+}
+.endpoint{
+    color: #abb2bf;
+}
+.request{
+    color: #009e3a;
+}

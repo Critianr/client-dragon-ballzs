@@ -16,7 +16,6 @@ body {
 }
 /* header */
 header{
-    
     color: width;
 }
 header > div{
@@ -28,11 +27,15 @@ header > div{
 }
 header > div > a>img{
     /* font-size: small; */
-    padding: 5px 0;
-    height: 20px;
+    padding: 10px 0;
+    height: 30px;
+    
 }
-header > div a{
+header > div .navlink{
+    color: white;
+    text-decoration: none;
     margin: 0 5px;
+    
 }
 header > p{
     display: flex;

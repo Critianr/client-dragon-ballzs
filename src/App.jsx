@@ -2,7 +2,11 @@ import {useState, useEffect } from 'react'
 import './App.css'
 import { CardCharacter } from './components/Character/CardCharacter'
 import img_title from './assets/dragonballLogo.png';
-import simbolo from './assets/prob.png';
+
+
+import { Header } from './components/Header/Header';
+import AppRouter from './router';
+
 function App() {
 
 const [data, setData] = useState(null);
@@ -62,30 +66,12 @@ useEffect(()=>{
     perGet();
     },[]);
   return (
+    
     <div className="App">
-        {/* <header>
-            <div>
-            <a><img src={simbolo} /></a>
-            <div>
-            <a>Docs</a>
-            <a>Supports us</a>
-            </div>
-            </div>
-            <p>API Dragon Ball Z Super</p>
-
-        </header> */}
+      
       <div className="main">
-      <header>
-            <div>
-            <a><img src={simbolo} /></a>
-            <div>
-            <a>Docs</a>
-            <a>Supports us</a>
-            </div>
-            </div>
-            <p>API Dragon Ball Z Super</p>
-
-        </header>
+        
+      <Header />
         <img className='img_title' src={img_title} alt="" />
         <div className='container-search'>
         <input className='search-character' type="text" 
@@ -100,9 +86,10 @@ useEffect(()=>{
             <p>Copyright 2022</p>            
             <p>Si deseas colabboraciòn en extender la funcionalidad de la API</p><span>contactanos</span>
         </footer>
+        
       </div>      
     </div>
-  )
+    )
 }
 
 export default App
