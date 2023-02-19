@@ -90,6 +90,8 @@ const Docs =() =>{
           <td>Link to the character's image</td>
         </tr>
       </table>
+      <h2>Filter characters</h2>
+      <p>Se esta trabajando en esto</p>
       </div>
     </>
     )

@@ -34,3 +34,7 @@
 .request{
     color: #009e3a;
 }
+
+.documentation > tr >td{
+    border-bottom: 2px rgb(141, 141, 141);
+}
