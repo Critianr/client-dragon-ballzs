@@ -24,15 +24,71 @@ const Docs =() =>{
       <h2>Character</h2>
       <p>There is a total of 20 characters sorted by id.</p>
       <table>
-        <td>
-          holya
-        </td>
-        <td>
-          holya
-        </td>
-        <td>
-          holya
-        </td>
+        <tr>
+        <td>Key</td>
+        <td>Type</td>
+        <td>Description</td>
+        </tr>
+        <tr>
+          <td>id</td>
+          <td>string</td>
+          <td>The id of the character.</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>string</td>
+          <td>The name of the character.</td>
+        </tr>
+        <tr>
+          <td>race</td>
+          <td>string</td>
+          <td>The race of the character.</td>
+        </tr>
+        <tr>
+          <td>gender</td>
+          <td>string</td>
+          <td>The gender of the character.</td>
+        </tr>
+        <tr>
+          <td>bio</td>
+          <td>string</td>
+          <td>The bio of the character.</td>
+        </tr>
+        <tr>
+          <td>bio</td>
+          <td>string</td>
+          <td>The bio of the character.</td>
+        </tr>
+        <tr>
+          <td>health</td>
+          <td>int</td>
+          <td>The health of the character.</td>
+        </tr>
+        <tr>
+          <td>attack</td>
+          <td>int</td>
+          <td>The attack of the character.</td>
+        </tr>
+        <tr>
+          <td>defense</td>
+          <td>int</td>
+          <td>The defense of the character.</td>
+        </tr>
+        <tr>
+          <td>kiRestoreSpeed</td>
+          <td>int</td>
+          <td>The kiRestoreSpeed of the character.</td>
+        </tr>
+        <tr>
+          <td>abilities</td>
+          <td>object</td>
+          <td>The abilities of the character</td>
+        </tr>
+        <tr>
+          <td>image</td>
+          <td>string (url)</td>
+          <td>Link to the character's image</td>
+        </tr>
       </table>
       </div>
     </>
