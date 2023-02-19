@@ -21,6 +21,19 @@ const Docs =() =>{
       <p><strong> Url base: </strong><a href='https://back-dragon-ballzs-production.up.railway.app/'>https://back-dragon-ballzs-production.up.railway.app/</a></p>
       <p>The base url contains information about all available API's resources. All requests are <code className='language-text'>GET</code> requests and go over <code className='language-text'>https</code>. All responses will return data in <code className='language-text'>json</code>.</p>
       <p className="code-vista" data-language="shell"><span className="endpoint"><span className="request">GET </span>https://back-dragon-ballzs-production.up.railway.app/</span></p>
+      <h2>Character</h2>
+      <p>There is a total of 20 characters sorted by id.</p>
+      <table>
+        <td>
+          holya
+        </td>
+        <td>
+          holya
+        </td>
+        <td>
+          holya
+        </td>
+      </table>
       </div>
     </>
     )
