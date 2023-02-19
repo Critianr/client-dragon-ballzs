@@ -9,7 +9,7 @@ const Header =() =>{
             <a><img src={simbolo} /></a>
             <div>
             <NavLink to="/Docs" className="navlink">Docs</NavLink>
-            <a>Supports us</a>
+            <NavLink to="/Support" className="navlink">Supports us</NavLink>
             </div>
             </div>
             <p>API Dragon Ball Z Super</p>
