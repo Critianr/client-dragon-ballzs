@@ -2,10 +2,8 @@ import {useState, useEffect } from 'react'
 import './App.css'
 import { CardCharacter } from './components/Character/CardCharacter'
 import img_title from './assets/dragonballLogo.png';
-
-
 import { Header } from './components/Header/Header';
-import AppRouter from './router';
+
 
 function App() {
 

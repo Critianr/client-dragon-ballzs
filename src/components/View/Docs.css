@@ -1,11 +1,13 @@
 .documentation{
     /* color: white; */
     padding: 0 4px;
-    background-image: url('../../assets/4.jpg');
-    max-width: 320px;
+    /* background-image: url('../../assets/4.jpg'); */
+    background-image:linear-gradient(rgb(58, 53, 53), rgba(39, 39, 39, 0.76)), url('../../assets/gohan.jpg');
+
+    /* max-width: 320px; */
     
     height: 100%;
-    background-color: rgb(50,50,50);
+    /* background-color: rgb(50,50,50); */
     /* background-blend-mode:soft-light ; */
     /* background-size: cover; */
     background-repeat: no-repeat;
@@ -17,6 +19,10 @@
     flex-direction: column;
     background-repeat: initial;
     background-position: center;}
+.documentation > .url-base>span{
+    text-decoration: none;
+    color:#abb2bf ;
+}
 .language-text{
     background-color:rgb(193, 253, 193) ;
     border-radius: 3px 3px 3px 3px;

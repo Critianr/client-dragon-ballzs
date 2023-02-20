@@ -1,0 +1,23 @@
+.about{
+    padding: 0 4px;
+    background-image:linear-gradient(rgb(58, 53, 53), rgba(39, 39, 39, 0.76)), url('../../assets/gohan.jpg');
+    /* background-color:rgba(161, 161, 161, 0.63); */
+    /* opacity: 0.25; */
+    width: 100%;
+    height: 100%;
+    
+
+    /* background-color: rgb(70, 69, 69); */
+    /* background-blend-mode:soft-light ; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-size: cover ; */
+    flex-direction: column;
+    background-repeat: initial;
+    background-position: center;
+    color: white;
+    
+}

@@ -1,0 +1,38 @@
+header{
+    color: width;
+}
+header > div{
+    display:flex;
+    justify-content: space-around;
+    /* float: right; */
+    color: white;
+    /* color: black; */
+}
+header > div > a>img{
+    /* font-size: small; */
+    padding: 10px 0;
+    height: 30px;
+    
+}
+header > div .navlink{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px 0;
+    
+}
+header > div .nav{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px 0;
+    
+}
+header > p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* color: black; */
+    font-size: 40px;
+    /* align-items: center; */
+}
