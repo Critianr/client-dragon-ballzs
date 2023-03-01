@@ -12,7 +12,8 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 
 const perGet=()=>{
-    fetch('https://back-dragon-ballzs-production.up.railway.app/'
+    // fetch('https://back-dragon-ballzs-production.up.railway.app/'
+    fetch('http://localhost:3000/'
     // ,
     // { method: 'GET',
     // // headers: ({'Content-type':'application/json'}),
@@ -26,7 +27,8 @@ const perGet=()=>{
 }
 
 const characterGet=()=>{
-    fetch('https://back-dragon-ballzs-production.up.railway.app/'
+    // fetch('https://back-dragon-ballzs-production.up.railway.app/'
+    fetch('http://localhost:3000/'
     // , 
     //  { method: 'GET',
     //    headers: ({'Content-type':'application/json'}),
@@ -79,6 +81,7 @@ useEffect(()=>{
 
         />
         </div>
+        <div className='envol'>
         <CardCharacter data={data} />
         <footer>
             <p>Copyright 2022</p>            
@@ -86,6 +89,7 @@ useEffect(()=>{
         </footer>
         
       </div>      
+      </div>
     </div>
     )
 }

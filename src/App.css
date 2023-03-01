@@ -24,13 +24,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(50,50,50);
-    /* background-blend-mode:soft-light ; */
-    /* background-size: cover; */
     background-repeat: no-repeat;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background-size: cover ; */
     flex-direction: column;
     background-repeat: initial;
     background-position: center;
@@ -51,13 +46,6 @@ body {
     /* align-content: center; */
     /* justify-content: center; */
 }
-.container {
-    display: grid;
-    justify-content: center;
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 .container-search {
     /* display: grid;
@@ -69,27 +57,9 @@ body {
     -moz-box-shadow: 10px 10px 5px 0px rgba(217, 217, 217, 1);
     box-shadow: 10px 10px 5px 0px rgba(217, 217, 217, 1); */
 }
+/*  Header */
 
-.container-search p {
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.alert {
-    background: #F70431;
-    padding: 20px;
-    color: #ffffff;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.header img {
-    display: grid;
-    justify-self: center;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 800px;
-}
+/* envoltura centro */
 
 .character-list ul {
     display: flex;
@@ -110,44 +80,45 @@ body {
     background: rgb(235, 235, 235);
     border: 0;
 }
-
-.profile {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.envol{
+    padding: 5px;
+    text-align: justify;
+    
 }
-
-.character-profile {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 20px;
-    max-width: 300px;
-    background: #ffffff;
-    -webkit-box-shadow: 10px 10px 30px 0px rgba(217, 217, 217, 1);
-    -moz-box-shadow: 10px 10px 30px 0px rgba(217, 217, 217, 1);
-    box-shadow: 10px 10px 30px 0px rgba(217, 217, 217, 1);
-}
-
-.character-profile p {
-    font-size: 24px;
-}
-
-.character-profile img {
-    width: 100%;
-    max-width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-    /* body {
-        background: red;
-    } */
-    .profile {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-}
-
 footer{
     color: white;
 }
+@media only screen and (min-width: 720px) {
+    .main{
+        padding: 0 4px;
+        background-image: linear-gradient(rgba(58, 53, 53, 0.26), rgba(39, 39, 39, 0.178)), url('./assets/4.jpg');
+        width: 100%;
+        height: 100%;
+        background-color: rgb(50,50,50);
+        background-repeat: initial;
+        display: flex;
+        flex-direction: column;
+        /* background-position: center; */
+        
+    }
+    .main > .img_title{
+        width: 100%;
+    }
+    .container-search{
+        display: flex;
+        justify-content: center;
+    }
+    .main .container-search > input{
+        /* border-radius: 25px 25px 25px 25px; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* align-self: center; */
+        /* align-content: center; */
+        /* justify-content: center; */
+    }
+    .envol{
+        padding:50px;
+        
+    }
+}
+
