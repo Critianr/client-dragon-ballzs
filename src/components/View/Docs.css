@@ -24,16 +24,17 @@
     color:#abb2bf ;
 }
 .language-text{
-    background-color:rgb(193, 253, 193) ;
+    /* background-color:rgb(193, 253, 193) ; */
     border-radius: 3px 3px 3px 3px;
     /* color: #fff130; */
     color: #009e3a;
     /* font-weight: 500; */
-    padding: 0.25rem 0.5rem;
+    /* padding: 0.25rem 0.5rem; */
     /* white-space: normal; */
 }
 .code-vista{
-    max-width: 320px;
+    background: black;
+    padding: 10px;
 }
 .endpoint{
     color: #abb2bf;
@@ -41,7 +42,56 @@
 .request{
     color: #009e3a;
 }
+.env-imgdata{
+    display: flex;
+    justify-content: center;
+}
+.img-data{
+    width: 300px; /* height: 200px; */
+}
 
 .documentation > tr >td{
     border-bottom: 2px rgb(141, 141, 141);
+}
+.documentation p{
+    text-align: justify;
+}
+.documentation p>a{
+    text-decoration: none;
+    color: orange;
+}
+@media only screen and (min-width: 720px) {
+    .documentation{
+        /* background: no-repeat; */
+        background-image:linear-gradient(rgb(58, 53, 53), rgba(39, 39, 39, 0.76)), url('../../assets/gohan.jpg');
+        width: 100%;
+        height: 100%;
+        /* background-blend-mode:soft-light ; */
+        /* background-size: cover; */
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        background-size: cover ;
+        flex-direction: column;
+        background-repeat: initial;
+        background-position: center;
+        color: white;
+    }
+    .documentation >.env-doc{
+        padding: 0 100px !important;
+    }
+    .img-data{
+        width: 400px; /* height: 200px; */
+    }
+    
+}
+@media only screen and (min-width: 1000px) {
+    .env-imgdata{
+        display: inline;
+     
+    }
+    .img-data{
+        width: 600px; 
+        height: 350px;
+    }
 }

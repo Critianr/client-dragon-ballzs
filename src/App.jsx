@@ -12,8 +12,7 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 
 const perGet=()=>{
-    // fetch('https://back-dragon-ballzs-production.up.railway.app/'
-    fetch('http://localhost:3000/'
+    fetch('https://dragon-ballz-super-api.site/api/'
     // ,
     // { method: 'GET',
     // // headers: ({'Content-type':'application/json'}),
@@ -27,8 +26,7 @@ const perGet=()=>{
 }
 
 const characterGet=()=>{
-    // fetch('https://back-dragon-ballzs-production.up.railway.app/'
-    fetch('http://localhost:3000/'
+    fetch('https://dragon-ballz-super-api.site/api/'
     // , 
     //  { method: 'GET',
     //    headers: ({'Content-type':'application/json'}),
@@ -72,7 +70,7 @@ useEffect(()=>{
       <div className="main">
         
       <Header />
-        <img className='img_title' src={img_title} alt="" />
+        <img className='img_title' src={img_title} alt="drangonballz" />
         <div className='container-search'>
         <input className='search-character' type="text" 
         placeholder='Busca el personaje'
@@ -84,8 +82,11 @@ useEffect(()=>{
         <div className='envol'>
         <CardCharacter data={data} />
         <footer>
-            <p>Copyright 2022</p>            
-            <p>Si deseas colabboraciòn en extender la funcionalidad de la API</p><span>contactanos</span>
+            <p>Copyright 2023</p>
+            <span></span>
+            <p>If you want to collaborate in extending the functionality of the API 
+            <span> contact us</span> greentreegreen7@gmail.com
+            </p>
         </footer>
         
       </div>      

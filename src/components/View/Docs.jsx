@@ -1,6 +1,7 @@
 // import { NavLink } from 'react-router-dom';
 import {Header} from '../../components/Header/Header';
 import './Docs.css';
+import vistadata from '../../assets/vistadata.png'
 const Docs =() =>{
     return(
     <>
@@ -12,19 +13,27 @@ const Docs =() =>{
       </div> */}
       <div className='documentation'>
       <Header />
+      <div className='env-doc'>
       <h1>Documentation</h1>
       <h2 id="introduction">Introduction</h2>
       <p>
       This documentation will help you get familiar with the resources of the Dragon Ball Z Super API and show you how to make different queries, so that you can get the most out of it.
       </p>
       <h1>Rest</h1>
-      <p className='url-base'><strong> Url base: </strong><span>https://back-dragon-ballzs-production.up.railway.app/</span></p>
+      <p className='url-base'>
+        <strong> Url base: </strong>
+        <a href='https://dragon-ballz-super-api.site/api'>https://dragon-ballz-super-api.site/api</a>
+        </p>
       <p>The base url contains information about all available API's resources. All requests are 
         <code className='language-text'>GET</code> requests and go over 
         <code className='language-text'>https</code>
         . All responses will return data in <code className='language-text'>json</code>.</p>
       <p className="code-vista" data-language="shell">
-        <span className="endpoint"><span className="request">GET </span>https://back-dragon-ballzs-production.up.railway.app/</span></p>
+        <span className="endpoint">
+          <span className="request">GET </span>https://dragon-ballz-super-api.site/api</span></p>
+        <div className='env-imgdata'>
+        <img className='img-data' src={vistadata} alt="json" />
+        </div>
       <h2>Character</h2>
       <p>There is a total of 20 characters sorted by id.</p>
       <table>
@@ -97,8 +106,17 @@ const Docs =() =>{
         </tbody>
       </table>
       <h2>Filter characters</h2>
-      <p>Se esta trabajando en esto</p>
+      <p>Todavia esta en proceso</p>
+      <footer>
+            <p>Copyright 2023</p>
+            <span></span>
+            <p>If you want to collaborate in extending the functionality of the API 
+            <span> contact us</span> greentreegreen7@gmail.com
+            </p>
+        </footer>
       </div>
+      </div>
+
     </>
     )
 }

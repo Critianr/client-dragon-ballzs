@@ -1,13 +1,7 @@
 .about{
-    padding: 0 4px;
     background-image:linear-gradient(rgb(58, 53, 53), rgba(39, 39, 39, 0.76)), url('../../assets/gohan.jpg');
-    /* background-color:rgba(161, 161, 161, 0.63); */
-    /* opacity: 0.25; */
     width: 100%;
     height: 100%;
-    
-
-    /* background-color: rgb(70, 69, 69); */
     /* background-blend-mode:soft-light ; */
     /* background-size: cover; */
     background-repeat: no-repeat;
@@ -19,5 +13,38 @@
     background-repeat: initial;
     background-position: center;
     color: white;
+    
+}
+.about p{
+    text-align: justify;
+}
+.about .about-links{
+    text-decoration: none;
+    color: orange;
+}
+.about p>a{
+    text-decoration: none;
+    color: orange;
+}
+@media only screen and (min-width: 720px) {
+    .about {
+        /* background: no-repeat; */
+        background-image:linear-gradient(rgb(58, 53, 53), rgba(39, 39, 39, 0.76)), url('../../assets/gohan.jpg');
+        width: 100%;
+        height: 100%;
+        /* background-blend-mode:soft-light ; */
+        /* background-size: cover; */
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        background-size: cover ;
+        flex-direction: column;
+        background-repeat: initial;
+        background-position: center;
+        color: white;
+    }
+    .about >.envabout{
+        padding: 0 150px !important;
+    }
     
 }

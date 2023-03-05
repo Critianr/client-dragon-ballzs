@@ -19,7 +19,7 @@ body {
 /* header */
 
 .main{
-    padding: 0 4px;
+    /* padding: 0 150px; */
     background-image: linear-gradient(rgba(58, 53, 53, 0.26), rgba(39, 39, 39, 0.178)), url('./assets/4.jpg');
     width: 100%;
     height: 100%;
@@ -90,19 +90,21 @@ footer{
 }
 @media only screen and (min-width: 720px) {
     .main{
-        padding: 0 4px;
+        padding: 0 5px;
         background-image: linear-gradient(rgba(58, 53, 53, 0.26), rgba(39, 39, 39, 0.178)), url('./assets/4.jpg');
         width: 100%;
         height: 100%;
         background-color: rgb(50,50,50);
-        background-repeat: initial;
-        display: flex;
+        background-size: cover ;
         flex-direction: column;
-        /* background-position: center; */
+        
+        color: white;
         
     }
     .main > .img_title{
+        
         width: 100%;
+        height: 250px;
     }
     .container-search{
         display: flex;
@@ -110,11 +112,12 @@ footer{
     }
     .main .container-search > input{
         /* border-radius: 25px 25px 25px 25px; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* align-self: center; */
-        /* align-content: center; */
-        /* justify-content: center; */
+        width: 400px;
+        height: 25px;
+    }
+    .main .container-search > input:hover{
+        /* color: orange; */
+        border-color: orange;
     }
     .envol{
         padding:50px;
