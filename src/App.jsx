@@ -7,7 +7,7 @@ import { Header } from './components/Header/Header';
 
 
 function App() {
-  useClient(); 
+
 const [data, setData] = useState(null);
 const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
