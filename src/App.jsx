@@ -10,59 +10,73 @@ function App() {
 const [data, setData] = useState(null);
 const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
+const perGet=async()=>{
+    // fetch('https://www.dragon-ballz-super-api.site/api',{
+     await fetch('http://localhost:3000/api',
+     
+  //   { method: 'GET',  //    headers: ({'Content-type':'application/json'}),
+  //    mode: 'no-cors', // <---
+  //     cache: 'default'
+  //  }
+  )
+.then(response => response.json())
+.then(character=>setCharacter(character.characters))
+.catch(err=>{
+console.log(err);
+ })
+ }
+// const perGet = async () => {
+//   try {
+//     const response = await fetch('http://localhost:3000/api'
+//     //   method: 'GET',
+//     //   headers: { 'Content-type': 'application/json' },
+//     //   cache: 'default'
+//     // }
+//     );
 
-const perGet=()=>{
-    fetch('https://dragon-ballz-super-api.site/api/'
-    // ,
-    // { method: 'GET',
-    // // headers: ({'Content-type':'application/json'}),
-    // mode: 'no-cors', // <---
-    // cache: 'default'
-    // }
-    )
-    .then(response => response.json())
-    .then(character=>setCharacter(character.characters))
-    .catch(error=>console.log(error));
-}
+//     const character = await response.json();
+
+//     console.log(character);
+//   } catch (err) {
+//     console.log('Error fetching data:', err);
+//   }
+// };
 
 const characterGet=()=>{
-    fetch('https://dragon-ballz-super-api.site/api/'
-    // , 
-    //  { method: 'GET',
-    //    headers: ({'Content-type':'application/json'}),
-    //   //  mode: 'no-cors', // <---
-    //   //  cache: 'default'
-    // }
-    )
-    .then(response => response.json())
-    .then(data=>setData(data.characters))
-    .catch(err=>{
-      console.log(err);
-    })
-    // .then(response => response.json())
-    // .then(data=>setData(data.characters))
-    // .catch(error=>console.log(error))
+     fetch('http://localhost:3000/api'
+       
+     )
+     .then(response => response.json())
+     .then(data=>setData(data.characters))
+     .catch(err=>{
+       console.log(err);
+     })
+  //    .then(response => response.json())
+  //    .then(data=>setData(data.characters))
+  //  .catch(error=>console.log(error))
 }
+useEffect(()=>{
+  perGet();
+  characterGet();
+
+  },[]);
 const handleChange=e=>{
     setSearch(e.target.value);
-    filtrar(e.target.value)
-
+    
+     filtrar(e.target.value)
     console.log("busqueda es : -> "+ e.target.value)
 }
-const filtrar=(terminoBusqueda)=>{
-    var resBusqueda=character.filter((elemento)=>{
-    if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-    || elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-    ){
-    return elemento;
-    }
-    });
-    setData(resBusqueda);
-  }
-useEffect(()=>{
-    characterGet();
-    perGet();
-    },[]);
+// const filtrar=(terminoBusqueda)=>{
+//     var resBusqueda=character.filter((elemento)=>{
+//     if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+//     || elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+//     ){
+//     return elemento;
+//     }
+//     });
+//     setData(resBusqueda);
+//   }
+
   return (
     
     <div className="App">
