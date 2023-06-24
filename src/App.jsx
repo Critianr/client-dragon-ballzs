@@ -1,3 +1,4 @@
+import React from 'react'
 import {useState, useEffect } from 'react'
 import './App.css'
 import { CardCharacter } from './components/Character/CardCharacter'
@@ -6,13 +7,13 @@ import { Header } from './components/Header/Header';
 
 
 function App() {
-
+  useClient(); 
 const [data, setData] = useState(null);
 const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 const perGet=async()=>{
     // fetch('https://www.dragon-ballz-super-api.site/api',{
-     await fetch('http://localhost:3000/api',
+     await fetch('https://back-dragon-ballzs-production.up.railway.app/',
      
   //   { method: 'GET',  //    headers: ({'Content-type':'application/json'}),
   //    mode: 'no-cors', // <---
@@ -43,7 +44,7 @@ console.log(err);
 // };
 
 const characterGet=()=>{
-     fetch('http://localhost:3000/api'
+     fetch('https://back-dragon-ballzs-production.up.railway.app/'
        
      )
      .then(response => response.json())
