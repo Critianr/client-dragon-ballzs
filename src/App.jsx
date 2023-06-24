@@ -43,7 +43,12 @@ console.log(err);
 // };
 
 const characterGet=()=>{
-     fetch('https://back-dragon-ballzs-production.up.railway.app/'
+     fetch('https://back-dragon-ballzs-production.up.railway.app/',
+     { 
+      method: 'GET',  
+        headers: ({'Content-type':'application/json'}),
+     mode: 'no-cors', // <---
+    }
        
      )
      .then(response => response.json())
