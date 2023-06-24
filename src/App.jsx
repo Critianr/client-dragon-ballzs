@@ -13,12 +13,7 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 const perGet=async()=>{
     // fetch('https://www.dragon-ballz-super-api.site/api',{
-     await fetch('https://back-dragon-ballzs-production.up.railway.app/api',
-     
-   { method: 'GET',  //    headers: ({'Content-type':'application/json'}),
-   mode: 'no-cors', // <---
-  }
-  )
+     await fetch('https://back-dragon-ballzs-production.up.railway.app/api')
 .then(response => response.json())
 .then(character=>setCharacter(character.characters))
 .catch(err=>{
@@ -43,14 +38,7 @@ console.log(err);
 // };
 
 const characterGet=()=>{
-     fetch('https://back-dragon-ballzs-production.up.railway.app/api',
-     { 
-      method: 'GET',  
-        headers: ({'Content-type':'application/json'}),
-     mode: 'no-cors', // <---
-    }
-       
-     )
+     fetch('https://back-dragon-ballzs-production.up.railway.app/api')
      .then(response => response.json())
      .then(data=>setData(data.characters))
      .catch(err=>{
