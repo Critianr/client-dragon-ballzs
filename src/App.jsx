@@ -15,10 +15,9 @@ const perGet=async()=>{
     // fetch('https://www.dragon-ballz-super-api.site/api',{
      await fetch('https://back-dragon-ballzs-production.up.railway.app/',
      
-  //   { method: 'GET',  //    headers: ({'Content-type':'application/json'}),
-  //    mode: 'no-cors', // <---
-  //     cache: 'default'
-  //  }
+   { method: 'GET',  //    headers: ({'Content-type':'application/json'}),
+   mode: 'no-cors', // <---
+  }
   )
 .then(response => response.json())
 .then(character=>setCharacter(character.characters))
