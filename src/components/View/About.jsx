@@ -31,7 +31,7 @@ const About =() =>{
     You can 
     <NavLink className="about-links" to="/Support"> help us to keep the project alive </NavLink> 
     and you can also contribute on, there are things to be done
-    <a href="https://railway.app/project/77d0accb-584c-4768-a259-85982e86058e/service/441dd066-7a3e-4ec6-9190-d6416f649584"> 
+    <a href="#"> 
         GitHub.
     </a>
     </p>
