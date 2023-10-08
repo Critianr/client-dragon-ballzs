@@ -45,7 +45,7 @@ const About =() =>{
             <p>Copyright 2023</p>
             <span></span>
             <p>If you want to collaborate in extending the functionality of the API 
-            <span> contact us</span>cramire122@gmail.com
+            <span> contact us: </span><span>cramire122@gmail.com</span>
             </p>
         </footer>
     </div>
