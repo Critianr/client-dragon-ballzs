@@ -13,7 +13,7 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 const perGet=async()=>{
     // fetch('https://www.dragon-ballz-super-api.site/api',{
-     await fetch('https://back-dragon-ballzs-production.up.railway.app/api')
+     await fetch('https://back-dragon-ballzs-mwfw-dev.fl0.io/api')
 .then(response => response.json())
 .then(character=>setCharacter(character.characters))
 .catch(err=>{
@@ -38,7 +38,7 @@ console.log(err);
 // };
 
 const characterGet=()=>{
-     fetch('https://back-dragon-ballzs-production.up.railway.app/api')
+     fetch('https://back-dragon-ballzs-mwfw-dev.fl0.io/api')
      .then(response => response.json())
      .then(data=>setData(data.characters))
      .catch(err=>{
@@ -59,16 +59,16 @@ const handleChange=e=>{
      filtrar(e.target.value)
     console.log("busqueda es : -> "+ e.target.value)
 }
-// const filtrar=(terminoBusqueda)=>{
-//     var resBusqueda=character.filter((elemento)=>{
-//     if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-//     || elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-//     ){
-//     return elemento;
-//     }
-//     });
-//     setData(resBusqueda);
-//   }
+ const filtrar=(terminoBusqueda)=>{
+     var resBusqueda=character.filter((elemento)=>{
+     if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+     || elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+     ){
+     return elemento;
+     }
+     });
+   setData(resBusqueda);
+ }
 
   return (
     
