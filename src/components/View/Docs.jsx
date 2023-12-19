@@ -22,7 +22,7 @@ const Docs =() =>{
       <h1>Rest</h1>
       <p className='url-base'>
         <strong> Url base: </strong>
-        <a href='https://back-dragon-ballzs-mwfw-dev.fl0.io/api'>https://back-dragon-ballzs-mwfw-dev.fl0.io/api</a>
+        <a href='https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api'>https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api</a>
         </p>
       <p>The base url contains information about all available API's resources. All requests are 
         <code className='language-text'>GET</code> requests and go over 
@@ -30,7 +30,7 @@ const Docs =() =>{
         . All responses will return data in <code className='language-text'>json</code>.</p>
       <p className="code-vista" data-language="shell">
         <span className="endpoint">
-          <span className="request">GET </span>https://back-dragon-ballzs-mwfw-dev.fl0.io/api</span></p>
+          <span className="request">GET </span>https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api</span></p>
         <div className='env-imgdata'>
         <img className='img-data' src={vistadata} alt="json" />
         </div>
