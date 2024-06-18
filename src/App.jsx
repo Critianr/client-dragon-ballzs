@@ -13,9 +13,9 @@ const [character, setCharacter]= useState([]);
 const [search, setSearch]=useState([])
 const perGet=async()=>{
     // fetch('https://www.dragon-ballz-super-api.site/api',{
-     await fetch('https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api')
+     await fetch('https://dragonball-api.com/api/characters/')
 .then(response => response.json())
-.then(character=>setCharacter(character.characters))
+.then(character=>setCharacter(character.items))
 .catch(err=>{
 console.log(err);
  })
@@ -38,7 +38,7 @@ console.log(err);
 // };
 
 const characterGet=()=>{
-     fetch('https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api')
+     fetch('https://dragonball-api.com/api/characters/')
      .then(response => response.json())
      .then(data=>setData(data.characters))
      .catch(err=>{
@@ -92,7 +92,7 @@ const handleChange=e=>{
             <p>Copyright 2023</p>
             <span></span>
             <p>If you want to collaborate in extending the functionality of the API 
-            <span> contact us</span>cramire122@gmail.com
+            <span> contact us </span>cramire122@gmail.com
             </p>
         </footer>
         

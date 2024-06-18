@@ -6,12 +6,12 @@ const CardCharacter = ({data})=>{
       <>
       {data && data.map(item => (
       <div key={item.id} className='container-card-character'>
-        <img className="character-image" src={item.img}/>
+        <img className="character-image" src={item.image}/>
         <h2> {item.name}</h2>
         <p>{item.bio}</p>
         
         <li>Race: {item.race}</li>
-        <li>Abilities: {item.abilities}</li>
+        <li>Description: {item.description}</li>
       </div>
        ))}
        </>

@@ -19,10 +19,11 @@ const Docs =() =>{
       <p>
       This documentation will help you get familiar with the resources of the Dragon Ball Z Super API and show you how to make different queries, so that you can get the most out of it.
       </p>
+      <p>API served and structured by Antonio Álvarez</p>
       <h1>Rest</h1>
       <p className='url-base'>
         <strong> Url base: </strong>
-        <a href='https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api'>https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api</a>
+        <a href='https://dragonball-api.com/api/characters/'>https://dragonball-api.com/api/characters/</a>
         </p>
       <p>The base url contains information about all available API's resources. All requests are 
         <code className='language-text'>GET</code> requests and go over 
@@ -30,12 +31,12 @@ const Docs =() =>{
         . All responses will return data in <code className='language-text'>json</code>.</p>
       <p className="code-vista" data-language="shell">
         <span className="endpoint">
-          <span className="request">GET </span>https://back-dragon-ballzs-dev-pjnh.2.us-1.fl0.io/api</span></p>
+          <span className="request">GET </span>https://dragonball-api.com/api/characters/</span></p>
         <div className='env-imgdata'>
         <img className='img-data' src={vistadata} alt="json" />
         </div>
       <h2>Character</h2>
-      <p>There is a total of 20 characters sorted by id.</p>
+      <p>There is a total of 20 and more characters sorted by id.</p>
       <table>
       <tbody>
         <tr>
